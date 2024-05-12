@@ -7,7 +7,7 @@ p5 `iframe` [shortcodes](https://gohugo.io/content-management/shortcodes/) embed
 # p5-iframe
 
 ```html
-{{</* p5-iframe ver="1.9.3" sketch="/path/to/sketch.js" lib1="https://cdntolib1/lib1.js" width="800" height="600" */>}}
+{{</* p5-iframe ver="1.9.3" sound="false" sketch="/path/to/sketch.js" lib1="https://cdntolib1/lib1.js" width="800" height="600" */>}}
 ```
 
 All parameters are optional but `sketch`. Default values are shown in the above snippet but for `libs*`. Up to `lib5` libs may be specified.
@@ -42,16 +42,16 @@ Example took from the [p5 examples](https://p5js.org/examples/sound-sound-effect
 
 {{< details title="p5-iframe markdown" open=false >}}
 {{< highlight html >}}
-{{</* p5-iframe sketch="/showcase/sketches/sound.js" width="225" height="225" */>}}
+{{</* p5-iframe sound="true" sketch="/showcase/sketches/sound.js" width="225" height="225" */>}}
 {{< /highlight >}}
 {{< /details >}}
 
-{{< p5-iframe sketch="/showcase/sketches/sound.js" width="225" height="225" >}}
+{{< p5-iframe sound="true" sketch="/showcase/sketches/sound.js" width="225" height="225" >}}
 
 # p5-global-iframe
 
 ```html
-{{</* p5-global-iframe id="sketchid" ver="1.9.3" lib1="https://cdntolib1/lib1.js" width="800" height="600" >}}
+{{</* p5-global-iframe sound="false" id="sketchid" ver="1.9.3" lib1="https://cdntolib1/lib1.js" width="800" height="600" >}}
   // inline sketch code
 {{< /p5-global-iframe */>}}
 ```
